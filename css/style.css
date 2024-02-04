@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* new css  */
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+
+
+}
+
+.sub-con {
+    height: 60%;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cityname {
+    color: red;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.w-icons {
+    height: 90px;
+    width: 90px;
+}
+
+.bg {
+    opacity: .7;
+    position: absolute;
+    z-index: 997;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.temp,
+.fa-solid,
+.weather {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.fa-temperature-quarter {
+    color: rgb(119, 3, 3);
+}
+
+.wind,
+.humidity,
+.Pressure {
+    font-weight: bold;
+}
+
+.sub-flex-1 {
+    width: 50%;
+    flex-direction: row;
+    display: flex;
+    padding: 10px;
+}
+
+.sub-flex-2 {
+    width: 50%;
+    text-align: right;
+}
+
+.flex-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+
+}
+
+.flex-3 {
+    margin-top: 10px;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 35%;
+
+}
+
+
+.city {
+    padding: 10px 10px;
+    border-radius: 5px 5px;
+}
+
+.btn-1 {
+    padding: 10px 25px;
+    border: 1px solid rgb(107, 104, 104);
+    box-shadow: 0 0 10px grey;
+    border-radius: 5px 5px;
+}
+
+.btn-1:hover {
+    background-color: rgb(205, 200, 200);
+}
+
+@media screen and (max-width:756px) {
+
+
+
+    .sub-con {
+        height: 60%;
+        width: 70%;
+
+    }
+}
+
+@media screen and (max-width:545px) {
+
+    .sub-con {
+        height: 60%;
+        width: 80%;
+
+    }
+}
+
+@media screen and (max-width:472px) {
+
+
+    .sub-con {
+        height: 60%;
+        width: 95%;
+
+    }
+}
